@@ -1,0 +1,866 @@
+<!DOCTYPE html><!--  Last Published: Wed Sep 04 2024 00:23:36 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="63ee6d8b12a1ffba7969a17c" data-wf-site="63ee6d8b12a1ffaabe69a12c" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Live Components - SystemFlow</title>
+  <meta content="Live components are Webflow symbols - pieces of essential code that will manage things like counters and other common web design elements." name="description">
+  <meta content="Live Components - SystemFlow" property="og:title">
+  <meta content="Live components are Webflow symbols - pieces of essential code that will manage things like counters and other common web design elements." property="og:description">
+  <meta content="Live Components - SystemFlow" property="twitter:title">
+  <meta content="Live components are Webflow symbols - pieces of essential code that will manage things like counters and other common web design elements." property="twitter:description">
+  <meta property="og:type" content="website">
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="kRo3JHCJ2rPksbdrwyNtjnlCG1197u9ebCmiAHzFHLs" name="google-site-verification">
+  <meta content="noindex" name="robots">
+  <link href="../../../css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="../../../css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="../../../css/shamptondigital.webflow.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="../../../images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="../../../images/webclip.png" rel="apple-touch-icon">
+  <link href="https://www.hamptondesigns.ca/style-guide/components/general/live-components" rel="canonical">
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-YLVYSXWKMF"></script>
+  <script type="text/javascript">window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('set', 'developer_id.dZGVlNj', true);gtag('config', 'G-YLVYSXWKMF');</script><!--  [Attributes by Finsweet] Copy to clipboard  -->
+  <script defer="" src="https://cdn.jsdelivr.net/npm/@finsweet/attributes-copyclip@1/copyclip.js"></script>
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+  <!--  Nocodelytics  -->
+  <script async="" id="nocodelytics-snippet" data-site-id="6d5ebcb0-e34f-4bdd-bb46-d495b5984d17" type="text/javascript">window.__NOCODELYTICS_SITE_ID__ = "6d5ebcb0-e34f-4bdd-bb46-d495b5984d17";fetch("https://app.nocodelytics.com/api/tracker/info").then((response) => response.json()).then((data) => { const s = document.createElement("script"); s.type = "text/javascript"; s.src = data.scriptFileName; document.head.append(s); });</script><!--  End Nocodelytics  -->
+</head>
+<body>
+  <div bind="ea0a8a58-97a6-f4c1-d9f9-560925be1aa2" class="custom-code-embeds">
+    <div bind="ea0a8a58-97a6-f4c1-d9f9-560925be1aa3" class="systemflow-embed w-embed">
+      <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp&display=swap" rel="stylesheet">
+      <style>.material-icons, .material-icons-outlined, .material-icons-two-tone, .material-icons-round, .material-icons-sharp{font-weight: normal; font-style: normal; font-size: 1.25rem; line-height: 1.25rem; display: inline-block; text-transform: none; letter-spacing: normal; word-wrap: normal; white-space: nowrap; direction: ltr; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; -moz-osx-font-smoothing: grayscale; font-feature-settings: 'liga';}.material-icons-s{font-size: 16px; line-height: 16px;}.embedly-embed{border-width:0px}</style>
+    </div>
+    <div bind="ea0a8a58-97a6-f4c1-d9f9-560925be1aa5" class="responsive-typography-embed w-embed"><!--  Responsive Typography  -->
+      <style>
+/* Desktop and above */
+html { font-size: 16px; }
+/*Tablet */
+@media (max-width: 991px) { html { font-size: 16px; } }
+/* Mobile - Landcape */
+@media (max-width: 767px) { html { font-size: 16px; } }
+/* Mobile - Portrait */
+@media (max-width: 479px) { html { font-size: 16px; } }
+</style>
+    </div>
+  </div>
+  <div bind="fc06880d-361d-d979-b843-41694a9f1cc8" class="style-guide-page-wrapper">
+    <nav bind="986dd887-2a81-65c3-0063-79f923da439a" class="navbar-vertical docsui">
+      <div data-collapse="medium" data-animation="default" data-duration="400" bind="986dd887-2a81-65c3-0063-79f923da439b" data-easing="ease" data-easing2="ease" role="banner" class="navbar-vertical---mobile w-nav">
+        <div class="container container-navbar">
+          <a href="#" class="brand-logo w-nav-brand"><img src="../../../images/SystemFlow-Logo.svg" sym-bind="{&quot;img&quot;:{&quot;type&quot;:&quot;Select&quot;,&quot;val&quot;:{&quot;from&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:&quot;data&quot;},&quot;prop&quot;:&quot;cd11c95d-90bb-644d-47f7-8430eec037f0&quot;}}}" bind="f7c57f42-c1b7-01f1-710d-29796bab0469" alt="SystemFlow Logo" class="brand-logo-image"></a>
+          <a href="#" class="button medium outline w-inline-block" data-ix="navbar-vertical-toggle">
+            <div class="text-icon-wrapper">
+              <div class="button-text">Menu</div>
+              <div class="material-icons small icon-right">menu_open</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="navbar-vertical-overlay">
+        <div class="navbar-vertical-content-wrapper">
+          <a href="#" class="navbar-vertical-brand w-inline-block"><img src="../../../images/SystemFlow-Logo.svg" sym-bind="{&quot;img&quot;:{&quot;type&quot;:&quot;Select&quot;,&quot;val&quot;:{&quot;from&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:&quot;data&quot;},&quot;prop&quot;:&quot;cd11c95d-90bb-644d-47f7-8430eec037f0&quot;}}}" bind="f7c57f42-c1b7-01f1-710d-29796bab0469" alt="SystemFlow Logo" class="brand-logo-image"></a>
+          <div id="w-node-_986dd887-2a81-65c3-0063-79f923da43a9-23da439a">
+            <ul role="list" class="w-list-unstyled">
+              <li>
+                <a href="../../../style-guide/overview.html" class="navbar-vertical-link">Overview</a>
+              </li>
+            </ul>
+          </div>
+          <div id="w-node-_986dd887-2a81-65c3-0063-79f923da43b2-23da439a">
+            <div class="navbar-vetrical-menu-title">Design</div>
+            <ul role="list" class="w-list-unstyled">
+              <li>
+                <a id="nav-typography" href="../../../style-guide/design/typography.html" class="navbar-vertical-link">Typography</a>
+                <a id="nav-color" href="../../../style-guide/design/color.html" class="navbar-vertical-link">Color</a>
+                <a id="nav-spacing" href="../../../style-guide/design/spacing-layout.html" class="navbar-vertical-link">Spacing &amp; Layout</a>
+                <a id="nav-icons" href="../../../style-guide/design/icons.html" class="navbar-vertical-link">Icons</a>
+              </li>
+            </ul>
+          </div>
+          <div id="w-node-_986dd887-2a81-65c3-0063-79f923da43c1-23da439a">
+            <div class="navbar-vetrical-menu-title">Components</div>
+            <div>
+              <div class="navbar-vetrical-menu-title-2">General</div>
+              <ul role="list" class="w-list-unstyled">
+                <li>
+                  <a id="nav-button" href="../../../style-guide/components/general/button.html" class="navbar-vertical-link">Button</a>
+                  <a id="nav-link" href="../../../style-guide/components/general/link.html" class="navbar-vertical-link">Link</a>
+                  <a id="nav-live-components" href="../../../style-guide/components/general/live-components.html" aria-current="page" class="navbar-vertical-link w--current">Live Components</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <div class="navbar-vetrical-menu-title-2">Navigation</div>
+              <ul role="list" class="w-list-unstyled">
+                <li>
+                  <a id="nav-breadcrumbs" href="../../../style-guide/components/navigation/breadcrumbs.html" class="navbar-vertical-link">Breadcrumbs</a>
+                  <a id="nav-dropdown" href="../../../style-guide/components/navigation/dropdown.html" class="navbar-vertical-link">Dropdown</a>
+                  <a id="nav-nav-menu" href="../../../style-guide/components/navigation/nav-menu.html" class="navbar-vertical-link">Nav Menu</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <div class="navbar-vetrical-menu-title-2">Form</div>
+              <ul role="list" class="w-list-unstyled">
+                <li>
+                  <a id="nav-input" href="../../../style-guide/components/form/input.html" class="navbar-vertical-link">Input</a>
+                  <a id="nav-textarea" href="../../../style-guide/components/form/textarea.html" class="navbar-vertical-link">Textarea</a>
+                  <a id="nav-form-toggles" href="../../../style-guide/components/form/form-toggles.html" class="navbar-vertical-link">Form Toggles</a>
+                  <a id="nav-example-forms" href="../../../style-guide/components/form/example-forms.html" class="navbar-vertical-link">Example Forms</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <div class="navbar-vetrical-menu-title-2">Data Display</div>
+              <ul role="list" class="w-list-unstyled">
+                <li>
+                  <a id="nav-avatar" href="../../../style-guide/components/data-display/avatar.html" class="navbar-vertical-link">Avatar</a>
+                  <a id="nav-card" href="../../../style-guide/components/data-display/card.html" class="navbar-vertical-link">Card</a>
+                  <a id="nav-collapse" href="../../../style-guide/components/data-display/collapse.html" class="navbar-vertical-link">Collapse</a>
+                  <a id="nav-table" href="../../../style-guide/components/data-display/table.html" class="navbar-vertical-link">Table</a>
+                  <a id="nav-tag" href="../../../style-guide/components/data-display/tag.html" class="navbar-vertical-link">Tag</a>
+                  <a id="nav-tooltip" href="../../../style-guide/components/data-display/tooltip.html" class="navbar-vertical-link">Tooltip</a>
+                  <a id="nav-tabs" href="../../../style-guide/components/data-display/tabs.html" class="navbar-vertical-link">Tabs</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <div class="navbar-vetrical-menu-title-2">Feedback</div>
+              <ul role="list" class="w-list-unstyled">
+                <li>
+                  <a id="nav-alert" href="../../../style-guide/components/feedback/alert.html" class="navbar-vertical-link">Alert</a>
+                  <a id="nav-modal" href="../../../style-guide/components/feedback/modal.html" class="navbar-vertical-link">Modal</a>
+                  <a id="nav-toast" href="../../../style-guide/components/feedback/toast.html" class="navbar-vertical-link">Toast</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="w-node-_986dd887-2a81-65c3-0063-79f923da43f9-23da439a">
+            <div class="navbar-vetrical-menu-title">Sections</div>
+            <ul role="list" class="w-list-unstyled">
+              <li>
+                <a id="nav-empty-sections" href="../../../style-guide/sections/empty-sections.html" class="navbar-vertical-link">Empty Sections</a>
+                <a id="nav-navbar" href="../../../style-guide/sections/navbar.html" class="navbar-vertical-link">Navbar</a>
+                <a id="nav-footer" href="../../../style-guide/sections/footer.html" class="navbar-vertical-link">Footer</a>
+                <a id="nav-hero" href="../../../style-guide/sections/hero.html" class="navbar-vertical-link">Hero</a>
+                <a id="nav-feat-text-c" href="../../../style-guide/sections/feature-text-center.html" class="navbar-vertical-link">Feature - Text Center</a>
+                <a id="nav-feat-text-l" href="../../../style-guide/sections/feature-text-left.html" class="navbar-vertical-link">Feature - Text Left</a>
+                <a id="nav-feat-text-r" href="../../../style-guide/sections/feature-text-right.html" class="navbar-vertical-link">Feature - Text Right</a>
+                <a id="nav-feat-grid" href="../../../style-guide/sections/feature-grid.html" class="navbar-vertical-link">Feature - Grid</a>
+                <a id="nav-cards" href="../../../style-guide/sections/cards-section.html" class="navbar-vertical-link">Cards Sections</a>
+                <a id="nav-cta" href="../../../style-guide/sections/cta.html" class="navbar-vertical-link">CTA Sections</a>
+                <a id="nav-faq" href="../../../style-guide/sections/faq.html" class="navbar-vertical-link">FAQ</a>
+                <a id="nav-pricing" href="../../../style-guide/sections/pricing.html" class="navbar-vertical-link">Pricing</a>
+                <a id="nav-testimonials" href="../../../style-guide/sections/testimonials.html" class="navbar-vertical-link">Testimonials</a>
+                <a id="nav-contact" href="../../../style-guide/sections/contact.html" class="navbar-vertical-link">Contact</a>
+                <a id="nav-long-content" href="../../../style-guide/sections/long-content.html" class="navbar-vertical-link">Long Content</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="navbar-vertical-bg"></div>
+      </div>
+      <div bind="12500f2f-4b84-df64-19e4-84e25061cc0a" class="custom-code-embeds w-embed"><!--  Custom styles  -->
+        <style>.component-wrapper-label {text-transform: capitalize;}</style>
+      </div>
+    </nav>
+    <div bind="dc39c630-ddcc-3c14-f2a1-9b42ba36aa93" class="style-guide">
+      <div id="top" bind="a7d58dcd-d8f7-0a3b-cccb-0b489bb3ea07" class="style-guide-page-header">
+        <div bind="db5de114-fb9f-a44c-cf6e-a5d5883f10ec" class="container">
+          <div bind="db5de114-fb9f-a44c-cf6e-a5d5883f10ed" class="style-guide-page-header-text">
+            <h1 bind="db5de114-fb9f-a44c-cf6e-a5d5883f10ee" class="heading xl">Live Components</h1>
+            <p bind="fe1ec801-4cbf-cdf5-0fb8-738b802976e3" class="body-text m s-m-b-0">Live components are Webflow symbols - pieces of essential code that will manage things like counters and other common web design elements. We&#x27;ve made components interactive and as easy to use as any other components.</p>
+          </div>
+        </div>
+      </div>
+      <div bind="b11e6477-28dc-b440-46c9-86a47de16e8a">
+        <div bind="80cfe250-70e1-43bc-e7dc-4b575782111b" class="container">
+          <div bind="ac5218f9-71a1-5a18-dacd-75bb88fb7d2f" class="wrapper-m long-content-menu-right">
+            <div bind="98c0af53-4f04-2b26-d752-4b2e5117f0e8" class="w-layout-grid long-content-menu-right">
+              <div bind="47e9cb1a-7ca8-6727-31f2-073d8235f96e" id="w-node-_47e9cb1a-7ca8-6727-31f2-073d8235f96e-7969a17c">
+                <div id="countdown" bind="ac5218f9-71a1-5a18-dacd-75bb88fb7d30" class="style-guide-page-section-wrapper">
+                  <h2 bind="ac5218f9-71a1-5a18-dacd-75bb88fb7d31">Countdown</h2>
+                  <p bind="231aff76-8a4d-f8f6-15d9-ec1a143fc479"><strong bind="be4a43b1-ebb8-f28d-97f6-14cac5b15473">Requires:</strong> SystemFlow 1.1+</p>
+                  <p bind="6e4a0425-1e6e-bd66-7c18-d9d38d65c146">This is simple countdown that will count towards a future date. You can use it for expiring promotion, live event countdown, starting new websites and more. We&#x27;ve also embedded counter into some components that you can use straight away. After the counter reaches 00:00 it will be automatically hidden. If you want to hide more elements altogether, you can combine the countdown with our Show &amp; Hide on date live component.</p>
+                  <h3 bind="fe059606-8831-9cc1-8ccf-cd02b36f5249">How to use it?</h3>
+                  <ol bind="e60a4c9a-f457-c0fe-e830-3cb647b8ab14" role="list">
+                    <li bind="694f8b32-faa1-bfb5-c22d-7eb1b3c26d88">Place the Component from Quick Search (Cmd + E) - search for <strong bind="33dcb238-4b55-deff-2ec5-87fc43e39623">LC / Countdown / ...</strong> and unlink it (right click and Unlink Instance).</li>
+                    <li bind="e067ecce-a06c-2de8-7704-3d4047439bdc">Select the LC / Countdown Component that you&#x27;ve unlinked and in it&#x27;s Settings tab, change the date in <span bind="137e7889-d2a3-8b09-1ca7-93fc58478f92" class="code-span">data-sysflow-counter</span> parameter. The date format is as follows: <span bind="f3757e85-70b7-3105-4dff-17e25b1b70e3" class="code-span">YYYY-MM-DDTHH:MM:SS+00:00</span> . Where +00:00 is the reference to GMT timezone. We use 24 hour format. For example: <span bind="60e53670-f738-1ea0-5e52-80e11a29efe3" class="code-span">2021-01-01T18:15:00+01:00</span> equals 6:15PM in GMT+1 on Jan 1st 2021.</li>
+                  </ol>
+                  <h4 bind="06705cc0-df53-cdfa-661b-118ccf5a0444">Countdown is also used in readymade components:</h4>
+                  <ol bind="b87a78c0-3a69-0c0b-6d96-b3dec2ef75c0" role="list">
+                    <li bind="b87a78c0-3a69-0c0b-6d96-b3dec2ef75c1">
+                      <a href="../../../style-guide/components/data-display/card.html" bind="4dae45e5-a637-e060-4429-698209ff2838">Card / Coundown 1</a>
+                    </li>
+                    <li bind="b87a78c0-3a69-0c0b-6d96-b3dec2ef75c6">
+                      <a href="../../../style-guide/components/data-display/card.html" bind="6a8f3081-9695-5475-99f3-51215e7cd6e2">Card / Coundown 2</a>
+                    </li>
+                    <li bind="b87a78c0-3a69-0c0b-6d96-b3dec2ef75c8">
+                      <a href="../../../style-guide/components/feedback/alert.html" bind="27eb833d-a1e5-ba4d-f600-12df9a4d2c54">Alert / Countdown Banner</a>
+                    </li>
+                  </ol>
+                  <div bind="ac5218f9-71a1-5a18-dacd-75bb88fb7d40" class="component-wrapper">
+                    <div bind="ac5218f9-71a1-5a18-dacd-75bb88fb7d41" class="component-wrapper-label">LC / Countdown / Inline</div>
+                    <div bind="7beb2856-d963-b4eb-bd2b-d5720a1b1fec" data-sysflow-counter="2023-01-05T17:40:00+01:00" class="lc-countdown">
+                      <div data-sysflow-counter-days="0" class="lc-countdown-wrapper">
+                        <div data-sysflow-counter-days-value="0" class="lc-countdown-count">0</div>
+                        <div class="lc-countdown-label"> days</div>
+                      </div>
+                      <div data-sysflow-counter-hours="0" class="lc-countdown-wrapper">
+                        <div data-sysflow-counter-hours-value="0" class="lc-countdown-count">0</div>
+                        <div class="lc-countdown-label">h</div>
+                      </div>
+                      <div data-sysflow-counter-mins="0" class="lc-countdown-wrapper">
+                        <div data-sysflow-counter-mins-value="0" class="lc-countdown-count">0</div>
+                        <div class="lc-countdown-label">m</div>
+                      </div>
+                      <div data-sysflow-counter-secs="0" class="lc-countdown-wrapper">
+                        <div data-sysflow-counter-secs-value="0" class="lc-countdown-count">0</div>
+                        <div class="lc-countdown-label">s</div>
+                      </div>
+                      <div bind="cd77ab55-afbc-fed3-e748-74112330a09a" class="lc-embed w-embed w-script">
+                        <script src="https://systemflowco.github.io/scripts/counter-min.js"></script>
+                      </div>
+                    </div>
+                  </div>
+                  <div bind="7164ddde-2d3a-2a0a-945d-0eb9d785b99d" class="component-wrapper">
+                    <div bind="7164ddde-2d3a-2a0a-945d-0eb9d785b99e" class="component-wrapper-label">LC / Countdown / Big</div>
+                    <div bind="9f479ac0-be02-47c4-e40e-6631c2c66e22" data-sysflow-counter="2023-01-05T17:40:00+01:00" class="lc-countdown big">
+                      <div data-sysflow-counter-days="0" class="lc-countdown-wrapper vertical">
+                        <div data-sysflow-counter-days-value="0" class="lc-countdown-count big">0</div>
+                        <div class="lc-countdown-label">Days</div>
+                      </div>
+                      <div data-sysflow-counter-hours="0" class="lc-countdown-wrapper vertical">
+                        <div data-sysflow-counter-hours-value="0" class="lc-countdown-count big">0</div>
+                        <div class="lc-countdown-label">Hours</div>
+                      </div>
+                      <div data-sysflow-counter-mins="0" class="lc-countdown-wrapper vertical">
+                        <div data-sysflow-counter-mins-value="0" class="lc-countdown-count big">0</div>
+                        <div class="lc-countdown-label">Minutes</div>
+                      </div>
+                      <div data-sysflow-counter-secs="0" class="lc-countdown-wrapper vertical">
+                        <div data-sysflow-counter-secs-value="0" class="lc-countdown-count big">0</div>
+                        <div class="lc-countdown-label">Seconds</div>
+                      </div>
+                      <div bind="85be7958-ef6e-6c9b-c4a9-b09288d16e20" class="lc-embed w-embed w-script">
+                        <script src="https://systemflowco.github.io/scripts/counter-min.js"></script>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="show-hide-on-date" bind="d111a4fe-8327-f894-e937-e11703fe1b4d" class="style-guide-page-section-wrapper s-m-b-64 sh-m-b-48">
+                  <h2 bind="d111a4fe-8327-f894-e937-e11703fe1b50">Show &amp; Hide on date</h2>
+                  <p bind="d111a4fe-8327-f894-e937-e11703fe1b54"><strong bind="e15946b6-6163-410b-8162-7b6bc2dc12cd">Requires:</strong> SystemFlow 1.1+</p>
+                  <p bind="d111a4fe-8327-f894-e937-e11703fe1b52">With this Live Component, you can show or hide whatever element you want, depending on future date. Everything within this components main container will be shown or hidden automatically when the server clock hits the defined date. Please note, that this will take effect after the page reloads - user will have to refresh it in order for script to work. This way you can for example hide the promotion notification on your landing page, once it expires. Combine it with Countdown Live Component for even better effect.</p>
+                  <h3 bind="d111a4fe-8327-f894-e937-e11703fe1b56">How to use it?</h3>
+                  <ol bind="d111a4fe-8327-f894-e937-e11703fe1b58" role="list">
+                    <li bind="bd22a919-8c09-17fb-a4d8-8b59daae0bb1">Place the Component from Quick Search (Cmd + E) - search for <strong bind="0a5301a0-6f5d-269f-52cf-4ad04f8dfacc">LC / Show Hide Wrapper</strong> and unlink it (right click and Unlink Instance).</li>
+                    <li bind="01c60c18-d344-9b76-9ce0-0d9efe7a8002">Drop the elements you want to hide inside the Show Hide Div.</li>
+                    <li bind="62cb67c9-2943-5197-b603-ad2a4df0d2d2">Edit the attributes: <span bind="62cb67c9-2943-5197-b603-ad2a4df0d2d5" class="code-span">data-sysflow-temporal</span> , <span bind="62cb67c9-2943-5197-b603-ad2a4df0d2d9" class="code-span">data-sysflow-temporal-start</span> , <span bind="62cb67c9-2943-5197-b603-ad2a4df0d2dd" class="code-span">data-sysflow-temporal-end</span> .<br>Where +00:00 is the reference to GMT timezone. We use 24 hour format. For example: <span bind="a29f1dcf-f85c-c79c-d027-87aef3151d7b" class="code-span">2021-01-01T18:15:00+01:00</span> equals 6:15PM in GMT+1 on Jan 1st 2021. Start and end attributes are optional. You can skip them if you don&#x27;t need start or end date. </li>
+                    <li bind="d111a4fe-8327-f894-e937-e11703fe1b65">Optional: If you want to hide any object without using the <strong bind="5b89c9fb-c6d1-0a9b-d461-896eb474cebc">LC / Show Hide Wrapper</strong> just add the following attributes in it&#x27;s settings:<br><span bind="4fcaefa5-8a8c-1c8c-f881-ab7d3b1b375c" class="code-span">data-sysflow-temporal</span> = 0<br><span bind="bb3d131c-82cd-b4e5-b7f9-3515726b45b3" class="code-span">data-sysflow-temporal-start</span> = 2020-12-17T19:30:00+01:00<br><span bind="951cce1e-8e71-3f29-fe4a-429595681606" class="code-span">data-sysflow-temporal-end</span> = 2020-12-27T09:00:00+01:00<br>Start and end attributes are optional. You can skip them if you don&#x27;t need start or end date.</li>
+                  </ol>
+                  <div bind="274d9981-53d7-c981-5dbb-e7cea4932c22" class="component-wrapper">
+                    <div bind="274d9981-53d7-c981-5dbb-e7cea4932c23" class="component-wrapper-label">LC / Show Hide Wrapper</div>
+                    <div bind="ee920d91-5f42-1a36-ba41-7edb603282d0" data-sysflow-temporal="0" data-sysflow-temporal-start="2023-01-05T17:39:00+01:00" data-sysflow-temporal-end="2024-01-05T17:40:05+01:00" class="show-hide-wrapper">
+                      <div bind="0a3541d1-8047-5c47-7791-bc0255c1ecc9" class="lc-embed w-embed w-script">
+                        <script src="https://systemflowco.github.io/scripts/temporal-min.js"></script>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="cookie-notification" bind="15e13dee-8551-7a7b-9134-d0ba6c43fe79" class="style-guide-page-section-wrapper">
+                  <h2 bind="15e13dee-8551-7a7b-9134-d0ba6c43fe7a">Cookie Notification</h2>
+                  <p bind="15e13dee-8551-7a7b-9134-d0ba6c43fe7e"><strong bind="2cc1c4ee-34f0-9921-5c65-e31648685cff">Requires:</strong> SystemFlow 1.1+</p>
+                  <p bind="15e13dee-8551-7a7b-9134-d0ba6c43fe7c">This Live Component lets you add obligatory Cookie Notification to your page. Once the user clicks on a button, entire Live Component is being hidden. Also, it adds the appropriate information to users browser (local storage, to be precise) not to show this component ever again. In addition, you can send some data of the user, including IP, to the specified webhook (optional) and use automation to save this information in e.g. Airtable.</p>
+                  <h3 bind="15e13dee-8551-7a7b-9134-d0ba6c43fe80">How to use it?</h3>
+                  <ol bind="05901bfd-0ef1-64eb-08fe-976d8dfa1988" role="list">
+                    <li bind="05901bfd-0ef1-64eb-08fe-976d8dfa1989">Place the Component from Quick Search (Cmd + E) - search for <strong bind="05901bfd-0ef1-64eb-08fe-976d8dfa198b">LC / Cookie Notification</strong> and unlink it (right click and Unlink Instance).</li>
+                    <li bind="b7c7248d-2359-5b80-2e7b-62e4c476ae6c">Modify the looks (if you want) of the Live Component, add link to your Cookie Policy etc.</li>
+                    <li bind="fb172499-5cb2-ebc3-1257-2b708aed97af">Optionally, change the <span bind="fb172499-5cb2-ebc3-1257-2b708aed97b1" class="code-span">attribute data-sysflow-cookie</span> from <span bind="fb172499-5cb2-ebc3-1257-2b708aed97b4" class="code-span">0</span> to the URL capturing the webhook with user data (for example Zapier or Integromat)</li>
+                  </ol>
+                  <div bind="15e13dee-8551-7a7b-9134-d0ba6c43fe9f" class="component-wrapper">
+                    <div bind="15e13dee-8551-7a7b-9134-d0ba6c43fea0" class="component-wrapper-label">LC / Cookie Notification</div>
+                    <div bind="7b837a97-e7a4-9e6f-b0a5-bc651b5f53d5" data-sysflow-cookie="0" class="cookie-notification">
+                      <div class="body-text s s-m-b-0">We use cookies to improve your experience and deliver personalized content. By using our website, you agree to our <a href="#" target="_blank">Cookie Policy</a>.</div>
+                      <a data-sysflow-cookie-accept="0" href="#" class="button small cookies w-inline-block">
+                        <div class="button-text">Got it</div>
+                      </a>
+                      <div bind="0d9b4547-23b1-16f3-d435-e4181ddfc2f1" class="lc-embed w-embed w-script">
+                        <script src="https://systemflowco.github.io/scripts/cookie-min.js"></script>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="confetti-popper" bind="1e321f61-3d5f-b1e8-af21-0d188a84c3a3" class="style-guide-page-section-wrapper">
+                  <h2 bind="1e321f61-3d5f-b1e8-af21-0d188a84c3a4">Confetti Popper</h2>
+                  <p bind="1e321f61-3d5f-b1e8-af21-0d188a84c3a8"><strong bind="1e321f61-3d5f-b1e8-af21-0d188a84c3a9">Requires:</strong> SystemFlow 1.1+</p>
+                  <p bind="1e321f61-3d5f-b1e8-af21-0d188a84c3a6">Celebrate it! Use our Confetti live component when user reaches the end of your conversion funnel or at any other occasion. Confetti Popper has two modes - you can either 1) start in when user enters the page, for a set number of seconds or 2) Use start and stop buttons to launch the confetti on user action - for example, when he clicks &quot;Subscribe&quot; on your email list page, then he sees a pop-up with a form, and when he closes the pop-up with X button, confetti stops.</p>
+                  <h3 bind="1e321f61-3d5f-b1e8-af21-0d188a84c3ac">How to use it?</h3>
+                  <ol bind="1e321f61-3d5f-b1e8-af21-0d188a84c3ae" role="list">
+                    <li bind="566a438c-9adb-bdac-9242-64856eefb5c6">Place the Component from Quick Search (Cmd + E) - search for <strong bind="566a438c-9adb-bdac-9242-64856eefb5c8">LC / Confetti </strong>and unlink it (right click and Unlink Instance).</li>
+                    <li bind="1e321f61-3d5f-b1e8-af21-0d188a84c3bb">In the component settings set up accordingly to what you want to accomplish:<br>‍<br><strong bind="9a9c92fd-f579-de4c-902d-7edeb7b57461">Start Confetti automatically when user enters the page:<br></strong>- select LC / Confetti Component that you&#x27;ve unlinked and in it&#x27;s Settings tab, change the attribute <span bind="3720bc64-8ed2-116a-9e8d-9e34db1a6b51" class="code-span">data-sysflow-confetti-autoload</span> from <span bind="af70e9e8-c3d0-95f6-5226-c5760fcd0478" class="code-span">0</span> to the desired time of animation in seconds<br>- you can remove OR leave readymade buttons to start and stop the animation<br><br><strong bind="b3751d7d-13f6-286a-2684-8944d391f811">Confetti started and stopped with user action:<br></strong>- use readymade buttons to start and stop the animation. Style them as you like!<br><br><strong bind="2609c43c-5302-5ea7-d387-51ff48557539">Confetti started with user action and stopped after a time period:<br></strong>- use readymade start button and add one additional attribute to the settings: <span bind="d4c051e0-d546-7245-d74a-c89388025de8" class="code-span">data-sysflow-confetti-start</span>. As the value for this attribute, provide time in seconds. After this time, confetti will end.<br></li>
+                  </ol>
+                  <div bind="1e321f61-3d5f-b1e8-af21-0d188a84c3c7" class="component-wrapper">
+                    <div bind="1e321f61-3d5f-b1e8-af21-0d188a84c3c8" class="component-wrapper-label">LC / Confetti</div>
+                    <div bind="662b153f-c378-285f-3219-643c2d1ca8bc" data-sysflow-confetti-autoload="0" class="confetti w-container">
+                      <a data-sysflow-confetti-start="3" href="#" class="button medium w-button">Confetti start</a>
+                      <div class="button-separator"></div>
+                      <a data-sysflow-confetti-stop="1" href="#" class="button medium w-button">Confetti stop</a>
+                      <div bind="662b153f-c378-285f-3219-643c2d1ca8c1" class="lc-embed w-embed w-script">
+                        <script src="https://systemflowco.github.io/scripts/confetti-min.js"></script>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="text-replace" bind="b26c1329-84c4-6e18-b857-d08f9ee745e1" class="style-guide-page-section-wrapper">
+                  <h2 bind="b26c1329-84c4-6e18-b857-d08f9ee745e2">Text Replace</h2>
+                  <p bind="b26c1329-84c4-6e18-b857-d08f9ee745e4"><strong bind="b26c1329-84c4-6e18-b857-d08f9ee745e5">Requires:</strong> SystemFlow 1.2+</p>
+                  <p bind="b26c1329-84c4-6e18-b857-d08f9ee745e8">This simple Component will let you replace any text on your page with the one provided in the query string. It comes in handy when you want to address specific group of people, who visit your site (for example you run a promotion with your partner, launch on Product Hunt etc.) or run a paid campaign where you can add UTMs and drive better conversions with addressing people by their interest, name etc.<br><br>⚠️ Please note, that entire container will be hidden until you pass the parameter (even without value) in the url. <br><br>ℹ️ If you want to show default text so that the component will be visible even without passing the param, please use <span bind="cb88f49f-a1ec-bd89-62bc-168485c6d504" class="code-span">data-sysflow-query-default</span> and set its value to anything else than <span bind="b86f3ab0-1718-cff3-cb32-921248d8bffc" class="code-span">0</span>. The value will be displayed by default.</p>
+                  <h3 bind="b26c1329-84c4-6e18-b857-d08f9ee745ed">How to use it?</h3>
+                  <ol bind="b26c1329-84c4-6e18-b857-d08f9ee745ef" role="list">
+                    <li bind="b26c1329-84c4-6e18-b857-d08f9ee745f0">Place the Component from Quick Search (Cmd + E) - search for <strong bind="b26c1329-84c4-6e18-b857-d08f9ee745f2">LC / Text Replace </strong>and unlink it (right click and Unlink Instance).</li>
+                    <li bind="b26c1329-84c4-6e18-b857-d08f9ee745f5">Optionally, change the attribute <span bind="b26c1329-84c4-6e18-b857-d08f9ee745f7" class="code-span">data-sysflow-query</span> value <span bind="b26c1329-84c4-6e18-b857-d08f9ee745fa" class="code-span">rep</span> to the name of the parameter name you want to use</li>
+                    <li bind="e5af1272-ce80-2989-f6f6-8988ffe768a6">Optionally, change the attribute <span bind="e5af1272-ce80-2989-f6f6-8988ffe768a8" class="code-span">data-sysflow-query-default</span> to whatever text you want to display by default. <strong bind="bf0efefb-53a3-555b-03e4-3abbb3429f9e">In this case, the component will be visible even without passing any param</strong>.</li>
+                    <li bind="b26c1329-84c4-6e18-b857-d08f9ee745fd">Adjust the component to your needs, remember, any span with an attribute <span bind="b26c1329-84c4-6e18-b857-d08f9ee745ff" class="code-span">data-sysflow-query-text</span> with value <span bind="b26c1329-84c4-6e18-b857-d08f9ee74602" class="code-span">1</span> will be replace to whatever you put in the query string</li>
+                    <li bind="b26c1329-84c4-6e18-b857-d08f9ee74605">After publishing, add the query string to the end of your address, for example <span bind="b26c1329-84c4-6e18-b857-d08f9ee74607" class="code-span">?rep=hello%20systemflow</span> </li>
+                    <li bind="b26c1329-84c4-6e18-b857-d08f9ee7460a">Optionally, you can use multiple instances of this component or create multiple containers with <span bind="b26c1329-84c4-6e18-b857-d08f9ee7460c" class="code-span">attribute data-sysflow-query</span> set. Remember to use different values such as <span bind="b26c1329-84c4-6e18-b857-d08f9ee7460f" class="code-span">rep</span>, <span bind="b26c1329-84c4-6e18-b857-d08f9ee74612" class="code-span">rep2</span>, <span bind="b26c1329-84c4-6e18-b857-d08f9ee74615" class="code-span">rep3</span> and while using multiple query strings, separate them with &amp;. An example would be <span bind="b26c1329-84c4-6e18-b857-d08f9ee74618" class="code-span">?rep=hello%20systemflow&amp;rep2=heyhey&amp;rep3=greg</span></li>
+                  </ol>
+                  <div bind="b26c1329-84c4-6e18-b857-d08f9ee7461a" class="component-wrapper">
+                    <div bind="b26c1329-84c4-6e18-b857-d08f9ee7461b" class="component-wrapper-label">LC / text replace</div>
+                    <div bind="ddab3726-5291-c535-13cf-847302dfbc00" data-sysflow-query="rep" data-sysflow-query-default="0" class="lc-text-replace">
+                      <div data-sysflow-query-text="1"><strong>This text will be replaced. </strong></div>
+                      <div>This is some other text.</div>
+                      <div bind="ce65f0d5-9ab4-99d9-7635-bfb08e5e6b49" class="lc-embed w-embed w-script">
+                        <script src="https://systemflowco.github.io/scripts/query-min.js"></script>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="form-memory" bind="4211a88e-13a8-22fe-c964-6a4f302f272f" class="style-guide-page-section-wrapper">
+                  <h2 bind="4211a88e-13a8-22fe-c964-6a4f302f2730">Form Memory</h2>
+                  <p bind="4211a88e-13a8-22fe-c964-6a4f302f2732"><strong bind="4211a88e-13a8-22fe-c964-6a4f302f2733">Requires:</strong> SystemFlow 1.2+</p>
+                  <p bind="4211a88e-13a8-22fe-c964-6a4f302f2736">This component lets you save the user form input to Local Storage. Imagine you have a long form that users have to fill in and they reload the page by mistake, or you redirect them to different pages in the meantime on purpose. When user gets back to the form, all the data are automatically filled in and remembered.<br><br>⚠️ Store uses <span bind="ac6c3a4d-34ff-52c9-c7a1-4d1a0f440193" class="code-span">data-sysflow-store</span> attribute applied to the form container. It means you can add new fields an manipulate id&#x27;s and input names and they&#x27;ll still be recalled when page refreshes</p>
+                  <h3 bind="4211a88e-13a8-22fe-c964-6a4f302f2738">How to use it?</h3>
+                  <ol bind="4211a88e-13a8-22fe-c964-6a4f302f273a" role="list">
+                    <li bind="4211a88e-13a8-22fe-c964-6a4f302f273b">Place the Component from Quick Search (Cmd + E) - search for <strong bind="4211a88e-13a8-22fe-c964-6a4f302f273d">LC / Form Memory </strong>and unlink it (Right click and Unlink Instance).</li>
+                    <li bind="4211a88e-13a8-22fe-c964-6a4f302f2740">That&#x27;s it! Form fields will be automatically saved to local storage and stay filled even after user closes the browser or refreshes the page</li>
+                  </ol>
+                  <div bind="4211a88e-13a8-22fe-c964-6a4f302f2742" class="component-wrapper">
+                    <div bind="4211a88e-13a8-22fe-c964-6a4f302f2743" class="component-wrapper-label">LC / form memory</div>
+                    <div bind="ffa01c8d-e5ad-0d44-0990-7f777e745354" data-sysflow-store="form1" class="lc-form-memory">
+                      <div bind="ffa01c8d-e5ad-0d44-0990-7f777e745355" class="w-form">
+                        <form id="email-form" name="email-form" data-name="Email Form" method="get" data-wf-page-id="63ee6d8b12a1ffba7969a17c" data-wf-element-id="ffa01c8d-e5ad-0d44-0990-7f777e745356"><label for="Store-Name" class="input-title">Name</label><input class="input medium w-input" maxlength="256" name="Name" data-name="Name" placeholder="Name" type="text" id="Store-Name"><label for="Store-Email" class="input-title">Email</label><input class="input medium w-input" maxlength="256" name="Email" data-name="Email" placeholder="Email" type="email" id="Store-Email" required=""><input type="submit" data-wait="Please wait..." class="button medium form-button w-button" value="Submit">
+                          <div bind="80cf9315-55c9-2a2c-833d-8f42be74965c" class="lc-embed w-embed w-script">
+                            <script src="https://systemflowco.github.io/scripts/store-min.js"></script>
+                          </div>
+                        </form>
+                        <div class="w-form-done">
+                          <div>Thank you! Your submission has been received!</div>
+                        </div>
+                        <div class="w-form-fail">
+                          <div>Oops! Something went wrong while submitting the form.</div>
+                        </div>
+                      </div>
+                      <div bind="4dacf10c-84cc-34d4-df86-5f7b90348b53" class="lc-embed w-embed w-script">
+                        <script src="https://systemflowco.github.io/scripts/store-min.js"></script>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="form-hidden-field" bind="af37e128-ee25-dee1-e2f4-e44417fc47b0" class="style-guide-page-section-wrapper">
+                  <h2 bind="af37e128-ee25-dee1-e2f4-e44417fc47b1">Form Hidden Field</h2>
+                  <p bind="af37e128-ee25-dee1-e2f4-e44417fc47b3"><strong bind="af37e128-ee25-dee1-e2f4-e44417fc47b4">Requires:</strong> SystemFlow 1.2+</p>
+                  <p bind="af37e128-ee25-dee1-e2f4-e44417fc47b7">This component lets you send additional information with the form that is filled in by your users. Imagine, you want to get the information about the partner, that sent the user via referral. When user fills in the registration form, together with the input data you will receive the name of the partner. You accomplish that with the query string, meaning, you can dynamically pass different information to the form depending on the source or campaign.<br><br>⚠️ Please note, that you can use only one hidden field per form. If you want to pass more data, you might consider <span bind="af37e128-ee25-dee1-e2f4-e44417fc47bc" class="code-span">Form prefill</span> live component</p>
+                  <h3 bind="af37e128-ee25-dee1-e2f4-e44417fc47bf">How to use it?</h3>
+                  <ol bind="af37e128-ee25-dee1-e2f4-e44417fc47c1" role="list">
+                    <li bind="af37e128-ee25-dee1-e2f4-e44417fc47c2">Place the Component from Quick Search (Cmd + E) - search for <strong bind="af37e128-ee25-dee1-e2f4-e44417fc47c4">LC / Form Hidden Field </strong>and unlink it (right click and Unlink Instance).</li>
+                    <li bind="af37e128-ee25-dee1-e2f4-e44417fc47c7">Optionally, change the attribute <span bind="af37e128-ee25-dee1-e2f4-e44417fc47c9" class="code-span">data-sysflow-query-form</span> value on the form element from <span bind="af37e128-ee25-dee1-e2f4-e44417fc47cc" class="code-span">ref</span> to the parameter name you want to use</li>
+                    <li bind="af37e128-ee25-dee1-e2f4-e44417fc47cf">After publishing, add the query string to the end of your address, for example <span bind="af37e128-ee25-dee1-e2f4-e44417fc47d1" class="code-span">?ref=partner</span> and this value will be sent together with all the form data</li>
+                  </ol>
+                  <div bind="af37e128-ee25-dee1-e2f4-e44417fc47d4" class="component-wrapper">
+                    <div bind="af37e128-ee25-dee1-e2f4-e44417fc47d5" class="component-wrapper-label">LC / form hidden field</div>
+                    <div bind="859d6c69-36fd-0b9a-48de-75fb9137e8c2" class="lc-form-hidden-field">
+                      <div bind="859d6c69-36fd-0b9a-48de-75fb9137e8c3" class="w-form">
+                        <form id="email-form" name="email-form" data-name="Email Form" method="get" data-sysflow-query-form="ref" data-wf-page-id="63ee6d8b12a1ffba7969a17c" data-wf-element-id="859d6c69-36fd-0b9a-48de-75fb9137e8c4"><label for="Form-Name" class="input-title">Name</label><input class="input medium w-input" maxlength="256" name="Name" data-name="Name" placeholder="" type="text" id="Form-Name"><label for="email-2" class="input-title">Email Address</label><input class="input medium w-input" maxlength="256" name="email-2" data-name="email-2" placeholder="" type="email" id="email-2" required=""><input type="submit" data-wait="Please wait..." class="button medium form-button w-button" value="Submit"></form>
+                        <div class="w-form-done">
+                          <div>Thank you! Your submission has been received!</div>
+                        </div>
+                        <div class="w-form-fail">
+                          <div>Oops! Something went wrong while submitting the form.</div>
+                        </div>
+                      </div>
+                      <div bind="72dc9475-b2c6-ac92-0311-f54b913602e9" class="lc-embed w-embed w-script">
+                        <script src="https://systemflowco.github.io/scripts/queryform-min.js"></script>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="form-prefill" bind="5f6ee37a-b2ed-87b8-53aa-7d204085f644" class="style-guide-page-section-wrapper">
+                  <h2 bind="5f6ee37a-b2ed-87b8-53aa-7d204085f645">Form prefill</h2>
+                  <p bind="5f6ee37a-b2ed-87b8-53aa-7d204085f647"><strong bind="5f6ee37a-b2ed-87b8-53aa-7d204085f648">Requires:</strong> SystemFlow 1.2+</p>
+                  <p bind="5f6ee37a-b2ed-87b8-53aa-7d204085f64b">Sometimes you want to pre-fill form data with some information. This might help the users so that they don&#x27;t have to type in the information that you already know (eg. their name when you redirect from an email) or pass the information that they might not know or are hard to find (eg. partner name or invoice number). <br><br>⚠️ Please note, that this information will be visible to users as input fields. If you want to hide information from user, consider <span bind="5f6ee37a-b2ed-87b8-53aa-7d204085f650" class="code-span">Form hidden field</span> component</p>
+                  <h3 bind="5f6ee37a-b2ed-87b8-53aa-7d204085f653">How to use it?</h3>
+                  <ol bind="5f6ee37a-b2ed-87b8-53aa-7d204085f655" role="list">
+                    <li bind="5f6ee37a-b2ed-87b8-53aa-7d204085f656">Place the Component from Quick Search (Cmd + E) - search for <strong bind="5f6ee37a-b2ed-87b8-53aa-7d204085f658">LC / Form Prefill </strong>and unlink it (right click and Unlink Instance).</li>
+                    <li bind="5f6ee37a-b2ed-87b8-53aa-7d204085f65b">Use the field ID&#x27;s to create parameter names that you will use in url to prefill the form</li>
+                  </ol>
+                  <p bind="4c12f593-7ad7-a432-6b5d-8f8470bf0a26">Example: use <span bind="91c7c158-9cb1-4e21-31a9-0dec27e6f9ef" class="code-span">?name=Adam</span> at the end of the address to pre-fill the <strong bind="0c83df37-68fc-87ab-fcd2-aa24d37bf2fc">Name</strong> input in the form (name comes from the field ID)</p>
+                  <div bind="5f6ee37a-b2ed-87b8-53aa-7d204085f66d" class="component-wrapper">
+                    <div bind="5f6ee37a-b2ed-87b8-53aa-7d204085f66e" class="component-wrapper-label">LC / form prefill</div>
+                    <div bind="77a5e485-d8df-cb23-6761-ebe74e3843dc" class="lc-form-prefill">
+                      <div bind="77a5e485-d8df-cb23-6761-ebe74e3843dd" data-sysflow-form-prefill="0" class="w-form">
+                        <form id="form-prefilled" name="wf-form-Form-Prefilled" data-name="Form Prefilled" method="get" data-wf-page-id="63ee6d8b12a1ffba7969a17c" data-wf-element-id="77a5e485-d8df-cb23-6761-ebe74e3843de"><label for="name" class="input-title">Name</label><input class="input medium w-input" maxlength="256" name="Name" data-name="Name" placeholder="" type="text" id="name"><label for="job" class="input-title">Job title</label><input class="input medium w-input" maxlength="256" name="Job-Title" data-name="Job Title" placeholder="" type="text" id="job"><label for="email" class="input-title">Email Address</label><input class="input medium w-input" maxlength="256" name="Email-Address" data-name="Email Address" placeholder="" type="email" id="email" required=""><input type="submit" data-wait="Please wait..." class="button medium form-button w-button" value="Submit">
+                          <div bind="fbd060fb-f156-387c-f2dd-34cdc84f4d82" class="lc-embed w-embed w-script">
+                            <script src="https://systemflowco.github.io/scripts/prefilled-min.js"></script>
+                          </div>
+                        </form>
+                        <div class="w-form-done">
+                          <div>Thank you! Your submission has been received!</div>
+                        </div>
+                        <div class="w-form-fail">
+                          <div>Oops! Something went wrong while submitting the form.</div>
+                        </div>
+                      </div>
+                      <div bind="4c779ec3-b94f-dffa-3fb5-8cd4dbbed0ca" class="lc-embed w-embed w-script">
+                        <script src="https://systemflowco.github.io/scripts/prefilled-min.js"></script>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="countup" bind="d187a836-c322-6cfe-b1b9-4bd40c69b4ec" class="style-guide-page-section-wrapper">
+                  <h2 bind="d187a836-c322-6cfe-b1b9-4bd40c69b4ed">Countup</h2>
+                  <p bind="d187a836-c322-6cfe-b1b9-4bd40c69b4ef"><strong bind="d187a836-c322-6cfe-b1b9-4bd40c69b4f0">Requires:</strong> SystemFlow 1.2+</p>
+                  <p bind="d187a836-c322-6cfe-b1b9-4bd40c69b4f3">This simple component will automatically animate the numbers counting up to the value entered in the text box. The countup will be activated once scrolled in view.</p>
+                  <h3 bind="d187a836-c322-6cfe-b1b9-4bd40c69b4fb">How to use it?</h3>
+                  <ol bind="d187a836-c322-6cfe-b1b9-4bd40c69b4fd" role="list">
+                    <li bind="d187a836-c322-6cfe-b1b9-4bd40c69b4fe">Place the Component from Quick Search (Cmd + E) - search for <strong bind="d187a836-c322-6cfe-b1b9-4bd40c69b500">LC / Countup </strong>and unlink it (right click and Unlink Instance).</li>
+                    <li bind="d187a836-c322-6cfe-b1b9-4bd40c69b503">Optionally, change the attribute <span bind="d187a836-c322-6cfe-b1b9-4bd40c69b505" class="code-span">data-sysflow-countup</span> value on the wrapper element the n</li>
+                    <li bind="811a2379-6f73-e175-f233-e50830a41ba2">Optionally, change the attribute <span bind="811a2379-6f73-e175-f233-e50830a41ba4" class="code-span">data-sysflow-countup-duration</span> value on the text element  the animation duration in miliseconds </li>
+                  </ol>
+                  <div bind="d187a836-c322-6cfe-b1b9-4bd40c69b515" class="component-wrapper">
+                    <div bind="d187a836-c322-6cfe-b1b9-4bd40c69b516" class="component-wrapper-label">LC / countup</div>
+                    <div bind="63a7e605-c9c7-3332-488c-a259860e2863" class="lc-countup">
+                      <div class="w-layout-grid l-g-4-col">
+                        <div data-sysflow-countup="0" class="countup alt">
+                          <div class="countup-wrapper">
+                            <div data-sysflow-countup-duration="5000" class="countup-number alt">120</div>
+                            <div class="countup-plus alt">+</div>
+                          </div>
+                          <div class="countup-title">Items</div>
+                          <p class="body-text s s-m-b-0">Take as many pixel-perfect UI elements as you want and style them the way you need in a fraction of the time.</p>
+                        </div>
+                        <div data-sysflow-countup="0" class="countup alt">
+                          <div class="countup-wrapper">
+                            <div data-sysflow-countup-duration="5000" class="countup-number alt">235</div>
+                            <div class="countup-plus alt">+</div>
+                          </div>
+                          <div class="countup-title">Items</div>
+                          <p class="body-text s s-m-b-0">Take as many pixel-perfect UI elements as you want and style them the way you need in a fraction of the time.</p>
+                        </div>
+                        <div data-sysflow-countup="0" class="countup alt">
+                          <div class="countup-wrapper">
+                            <div data-sysflow-countup-duration="5000" class="countup-number alt">465</div>
+                            <div class="countup-plus alt">+</div>
+                          </div>
+                          <div class="countup-title">Items</div>
+                          <p class="body-text s s-m-b-0">Take as many pixel-perfect UI elements as you want and style them the way you need in a fraction of the time.</p>
+                        </div>
+                        <div data-sysflow-countup="0" class="countup alt">
+                          <div class="countup-wrapper">
+                            <div data-sysflow-countup-duration="5000" class="countup-number alt">632</div>
+                            <div class="countup-plus alt">+</div>
+                          </div>
+                          <div class="countup-title">Items</div>
+                          <p class="body-text s s-m-b-0">Take as many pixel-perfect UI elements as you want and style them the way you need in a fraction of the time.</p>
+                        </div>
+                      </div>
+                      <div bind="8e99713d-e2f2-3052-19a4-62b75c4ec849" class="lc-embed w-embed w-script">
+                        <script src="https://systemflowco.github.io/scripts/countup-min.js"></script>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="age-verification" bind="00d91ad9-f933-73e4-0a5d-a37ac3ceca97" class="style-guide-page-section-wrapper">
+                  <h2 bind="00d91ad9-f933-73e4-0a5d-a37ac3ceca98">Age Verification</h2>
+                  <p bind="00d91ad9-f933-73e4-0a5d-a37ac3ceca9a"><strong bind="00d91ad9-f933-73e4-0a5d-a37ac3ceca9b">Requires:</strong> SystemFlow 1.3+</p>
+                  <p bind="00d91ad9-f933-73e4-0a5d-a37ac3ceca9e">This component will let you verify the visitor&#x27;s age before entering the page. Once verified, the data is stored in Local Storage and never shows up again. You can change the age required to enter as well as modify the fields - only the year field is mandatory. If the requirements are not met, there&#x27;s an error message popping up, if the conditions are met - popup disappears. <br>‍<br>⚠️ Important! In order to edit this component, change the opacity on the main container as it is set to 0 for animation purposes!</p>
+                  <h3 bind="00d91ad9-f933-73e4-0a5d-a37ac3cecaa0">How to use it?</h3>
+                  <ol bind="00d91ad9-f933-73e4-0a5d-a37ac3cecaa2" role="list">
+                    <li bind="00d91ad9-f933-73e4-0a5d-a37ac3cecaa3">Place the Component from Quick Search (Cmd + E) - search for <strong bind="00d91ad9-f933-73e4-0a5d-a37ac3cecaa5">LC / Age Verification </strong>and unlink it (right click and Unlink Instance)</li>
+                    <li bind="00d91ad9-f933-73e4-0a5d-a37ac3cecaa8">Optionally, change the attribute <span bind="00d91ad9-f933-73e4-0a5d-a37ac3cecaaa" class="code-span">data-sysflow-age</span> value on the main container to the desired age (it&#x27;s 18 by default) </li>
+                    <li bind="00d91ad9-f933-73e4-0a5d-a37ac3cecaae">Optionally, remove day and month fields and labels. The only necessary input is year. Remember that the main component has opacity set to 0, so change it temporarily in order to make those modifications</li>
+                  </ol>
+                  <div bind="00d91ad9-f933-73e4-0a5d-a37ac3cecab3" class="component-wrapper">
+                    <div bind="00d91ad9-f933-73e4-0a5d-a37ac3cecab4" class="component-wrapper-label">LC / Age verification</div>
+                    <div bind="79085538-0218-3560-1409-69cac7ab31f6">We&#x27;re not including the component here, as it acts as a pop up. Please insert in on the desired page with the Quick Search (Cmd + E)</div>
+                  </div>
+                </div>
+                <div id="multiple-select" bind="59f64cba-7e69-57bd-dda2-278741f06334" class="style-guide-page-section-wrapper">
+                  <h2 bind="59f64cba-7e69-57bd-dda2-278741f06335">Multiple Select</h2>
+                  <p bind="59f64cba-7e69-57bd-dda2-278741f06337"><strong bind="59f64cba-7e69-57bd-dda2-278741f06338">Requires: </strong>SystemFlow 1.3+</p>
+                  <p bind="59f64cba-7e69-57bd-dda2-278741f0633b">This component allows you for placing multiple select options as tags in the select field. You can use it for example to filter out card results as shown in the Cards Filter component.</p>
+                  <h3 bind="59f64cba-7e69-57bd-dda2-278741f0633d">How to use it?</h3>
+                  <ol bind="59f64cba-7e69-57bd-dda2-278741f0633f" role="list">
+                    <li bind="59f64cba-7e69-57bd-dda2-278741f06340">Place the Component from Quick Search (Cmd + E) - search for <strong bind="59f64cba-7e69-57bd-dda2-278741f06342">LC / Multiple Select </strong>and unlink it (right click and Unlink Instance).</li>
+                    <li bind="59f64cba-7e69-57bd-dda2-278741f06345">Determine the select options inside the Form -&gt; Multiple element in the Settings</li>
+                  </ol>
+                  <div bind="59f64cba-7e69-57bd-dda2-278741f06350" class="component-wrapper">
+                    <div bind="59f64cba-7e69-57bd-dda2-278741f06351" class="component-wrapper-label">LC / MULTIPLE SELECT</div>
+                    <div bind="be9584e2-7315-62dd-0b9b-2d978d600d05" class="w-form">
+                      <form id="email-form-3" name="email-form-3" data-name="Email Form 3" method="get" data-wf-page-id="63ee6d8b12a1ffba7969a17c" data-wf-element-id="be9584e2-7315-62dd-0b9b-2d978d600d06">
+                        <div data-sysflow-multiple="0" class="multiple"><select id="field-2" name="field-2" data-name="field" multiple="" data-sysflow-multiple-select="0" class="select medium hidden w-select">
+                            <option value="First">First Choice</option>
+                            <option value="Second">Second Choice</option>
+                            <option value="Third">Third Choice</option>
+                            <option value="Fourth">Fourth Choice</option>
+                            <option value="Fifth ">Fifth Choice</option>
+                          </select>
+                          <div data-hover="false" data-delay="0" bind="be9584e2-7315-62dd-0b9b-2d978d600d09" class="dropdown w-dropdown">
+                            <div data-sysflow-multiple-toggle="0" class="button medium outline multiple w-dropdown-toggle">
+                              <div class="multiple-select-content">
+                                <div class="tags-wrapper">
+                                  <div data-sysflow-multiple-tags="0" class="tags">
+                                    <div class="tag tag-closeable">
+                                      <div>Tag</div>
+                                      <div class="material-icons icon-right icon-close">close</div>
+                                    </div>
+                                    <div class="tag tag-closeable">
+                                      <div>Tag</div>
+                                      <div class="material-icons icon-right icon-close">close</div>
+                                    </div>
+                                  </div>
+                                  <div data-sysflow-multiple-placeholder="0">Select...</div>
+                                </div>
+                                <div class="material-icons icon-right">expand_more</div>
+                              </div>
+                            </div>
+                            <nav data-sysflow-multiple-list="0" class="dropdown-menu-1 w-dropdown-list"></nav>
+                          </div>
+                          <div bind="be9584e2-7315-62dd-0b9b-2d978d600d1a" class="lc-embed w-embed w-script">
+                            <style>
+.dropdown-menu-item.w-dropdown-link.selected {
+ 	background-color: #B3D6F9;
+}
+</style>
+                            <script src="https://systemflowco.github.io/scripts/multiple-min.js"></script>
+                          </div>
+                        </div>
+                      </form>
+                      <div class="w-form-done">
+                        <div>Thank you! Your submission has been received!</div>
+                      </div>
+                      <div class="w-form-fail">
+                        <div>Oops! Something went wrong while submitting the form.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="cards-search" bind="d6bd3e6b-9032-7880-60b9-c688ccf2d9d9" class="style-guide-page-section-wrapper">
+                  <h2 bind="d6bd3e6b-9032-7880-60b9-c688ccf2d9da">Cards Search</h2>
+                  <p bind="d6bd3e6b-9032-7880-60b9-c688ccf2d9dc"><strong bind="d6bd3e6b-9032-7880-60b9-c688ccf2d9dd">Requires: </strong>SystemFlow 1.3+</p>
+                  <p bind="d6bd3e6b-9032-7880-60b9-c688ccf2d9e0">This simple component will automatically search within the Cards and highlight search phrases.</p>
+                  <h3 bind="d6bd3e6b-9032-7880-60b9-c688ccf2d9e2">How to use it?</h3>
+                  <ol bind="d6bd3e6b-9032-7880-60b9-c688ccf2d9e4" role="list">
+                    <li bind="d6bd3e6b-9032-7880-60b9-c688ccf2d9e5">Place the Component from Quick Search (Cmd + E) - search for <strong bind="d6bd3e6b-9032-7880-60b9-c688ccf2d9e7">LC / Cards Search </strong>and unlink it (right click and Unlink Instance). The only requirement for this component is to be nested within the <span bind="b2a4a5b2-92ed-e076-e08a-6972be1b3d19" class="code-span">.container</span> where the cards are.</li>
+                  </ol>
+                  <div bind="d6bd3e6b-9032-7880-60b9-c688ccf2d9f5" class="component-wrapper">
+                    <div bind="d6bd3e6b-9032-7880-60b9-c688ccf2d9f6" class="component-wrapper-label">LC / Cards Search</div>
+                    <div bind="f814b7f8-6606-8e4f-4131-f8872ceb640d" class="cards-section c-b-neutral-20">
+                      <div bind="f814b7f8-6606-8e4f-4131-f8872ceb640e" class="container">
+                        <div bind="f814b7f8-6606-8e4f-4131-f8872ceb640f" class="wrapper-m">
+                          <div bind="901ee61f-4ffb-d1e0-1fb1-9c34c5a072ac" class="w-form">
+                            <div bind="901ee61f-4ffb-d1e0-1fb1-9c34c5a072ad" class="lc-embed w-embed w-script">
+                              <script src="https://systemflowco.github.io/scripts/cardssearch-min.js"></script>
+                            </div>
+                            <form id="email-form" name="email-form" data-name="Email Form" method="get" class="form" data-wf-page-id="63ee6d8b12a1ffba7969a17c" data-wf-element-id="901ee61f-4ffb-d1e0-1fb1-9c34c5a072ae">
+                              <div class="input-with-label">
+                                <div class="input-icon-wrapper"><input class="input medium icon-right w-input" data-sysflow-cards-search="0" maxlength="256" name="Search-2" data-name="Search 2" placeholder="Search" type="text" id="Search-2">
+                                  <div class="material-icons icon-input-right">search</div>
+                                </div>
+                              </div>
+                            </form>
+                            <div class="w-form-done">
+                              <div>Thank you! Your submission has been received!</div>
+                            </div>
+                            <div class="w-form-fail">
+                              <div>Oops! Something went wrong while submitting the form.</div>
+                            </div>
+                          </div>
+                          <div bind="f814b7f8-6606-8e4f-4131-f8872ceb645f" class="w-layout-grid l-g-2-col">
+                            <a bind="f814b7f8-6606-8e4f-4131-f8872ceb6460" id="w-node-f814b7f8-6606-8e4f-4131-f8872ceb6460-7969a17c" href="#" class="card card-box w-inline-block"><img src="../../../images/Image-Placeholder-2.svg" bind="f814b7f8-6606-8e4f-4131-f8872ceb6461" height="" alt="Image placeholder" class="card-image card-image-box">
+                              <div bind="f814b7f8-6606-8e4f-4131-f8872ceb6462" class="card-text-wrapper s-p-24">
+                                <div bind="f814b7f8-6606-8e4f-4131-f8872ceb6463" class="card-title">
+                                  <div bind="f814b7f8-6606-8e4f-4131-f8872ceb6464" class="tagline">Vegetable</div>
+                                  <h3 bind="f814b7f8-6606-8e4f-4131-f8872ceb6466" class="heading xs">Potato</h3>
+                                  <p bind="f814b7f8-6606-8e4f-4131-f8872ceb6468" class="body-text m s-m-b-0">The potato is a starchy tuber of the plant Solanum tuberosum and is a root vegetable native to the Americas, with the plant itself being a perennial in the nightshade family Solanaceae.</p>
+                                </div>
+                              </div>
+                            </a>
+                            <a bind="f814b7f8-6606-8e4f-4131-f8872ceb646a" id="w-node-f814b7f8-6606-8e4f-4131-f8872ceb646a-7969a17c" href="#" class="card card-box w-inline-block"><img src="../../../images/Image-Placeholder-2.svg" alt="Image placeholder" bind="f814b7f8-6606-8e4f-4131-f8872ceb646b" class="card-image card-image-box">
+                              <div bind="f814b7f8-6606-8e4f-4131-f8872ceb646c" class="card-text-wrapper s-p-24">
+                                <div bind="f814b7f8-6606-8e4f-4131-f8872ceb646d" class="card-title">
+                                  <div bind="f814b7f8-6606-8e4f-4131-f8872ceb646e" class="tagline">Fruit</div>
+                                  <h3 bind="f814b7f8-6606-8e4f-4131-f8872ceb6470" class="heading xs">Banana</h3>
+                                  <p bind="f814b7f8-6606-8e4f-4131-f8872ceb6472" class="body-text m s-m-b-0">A banana is an elongated, edible fruit – botanically a berry – produced by several kinds of large herbaceous flowering plants.</p>
+                                </div>
+                              </div>
+                            </a>
+                            <a bind="f814b7f8-6606-8e4f-4131-f8872ceb6474" id="w-node-f814b7f8-6606-8e4f-4131-f8872ceb6474-7969a17c" href="#" class="card card-box w-inline-block"><img src="../../../images/Image-Placeholder-2.svg" alt="Image placeholder" bind="f814b7f8-6606-8e4f-4131-f8872ceb6475" class="card-image card-image-box">
+                              <div bind="f814b7f8-6606-8e4f-4131-f8872ceb6476" class="card-text-wrapper s-p-24">
+                                <div bind="f814b7f8-6606-8e4f-4131-f8872ceb6477" class="card-title">
+                                  <div bind="f814b7f8-6606-8e4f-4131-f8872ceb6478" class="tagline">Vegetable</div>
+                                  <h3 bind="f814b7f8-6606-8e4f-4131-f8872ceb647a" class="heading xs">Cucumber</h3>
+                                  <p bind="f814b7f8-6606-8e4f-4131-f8872ceb647c" class="body-text m s-m-b-0">Cucumber (Cucumis sativus) is a widely-cultivated creeping vine plant in the Cucurbitaceae gourd family that bears usually cylindrical fruits, which are used as vegetables.</p>
+                                </div>
+                              </div>
+                            </a>
+                            <a bind="0329da1b-37ac-8abe-8508-4b903443d828" id="w-node-_0329da1b-37ac-8abe-8508-4b903443d828-7969a17c" href="#" class="card card-box w-inline-block"><img src="../../../images/Image-Placeholder-2.svg" alt="Image placeholder" bind="0329da1b-37ac-8abe-8508-4b903443d829" class="card-image card-image-box">
+                              <div bind="0329da1b-37ac-8abe-8508-4b903443d82a" class="card-text-wrapper s-p-24">
+                                <div bind="0329da1b-37ac-8abe-8508-4b903443d82b" class="card-title">
+                                  <div bind="0329da1b-37ac-8abe-8508-4b903443d82c" class="tagline">Vegetable</div>
+                                  <h3 bind="0329da1b-37ac-8abe-8508-4b903443d82e" class="heading xs">Carrot</h3>
+                                  <p bind="0329da1b-37ac-8abe-8508-4b903443d830" class="body-text m s-m-b-0">The carrot is a root vegetable, typically orange in color, though purple, black, red, white, and yellow cultivars exist, all of which are domesticated forms of the wild carrot, Daucus carota, native to Europe and Southwestern Asia.</p>
+                                </div>
+                              </div>
+                            </a>
+                            <a bind="658ddd13-617e-7d63-aed4-31208db3dced" id="w-node-_658ddd13-617e-7d63-aed4-31208db3dced-7969a17c" href="#" class="card card-box w-inline-block"><img src="../../../images/Image-Placeholder-2.svg" alt="Image placeholder" bind="658ddd13-617e-7d63-aed4-31208db3dcee" class="card-image card-image-box">
+                              <div bind="658ddd13-617e-7d63-aed4-31208db3dcef" class="card-text-wrapper s-p-24">
+                                <div bind="658ddd13-617e-7d63-aed4-31208db3dcf0" class="card-title">
+                                  <div bind="658ddd13-617e-7d63-aed4-31208db3dcf1" class="tagline">Fruit</div>
+                                  <h3 bind="658ddd13-617e-7d63-aed4-31208db3dcf3" class="heading xs">Pineapple</h3>
+                                  <p bind="658ddd13-617e-7d63-aed4-31208db3dcf5" class="body-text m s-m-b-0">The pineapple (Ananas comosus) is a tropical plant with an edible fruit; it is the most economically significant plant in the family Bromeliaceae. The pineapple is indigenous to South America, where it has been cultivated for many centuries.</p>
+                                </div>
+                              </div>
+                            </a>
+                            <a bind="28259b75-5edd-83ab-3d62-29e5cae11078" id="w-node-_28259b75-5edd-83ab-3d62-29e5cae11078-7969a17c" href="#" class="card card-box w-inline-block"><img src="../../../images/Image-Placeholder-2.svg" alt="Image placeholder" bind="28259b75-5edd-83ab-3d62-29e5cae11079" class="card-image card-image-box">
+                              <div bind="28259b75-5edd-83ab-3d62-29e5cae1107a" class="card-text-wrapper s-p-24">
+                                <div bind="28259b75-5edd-83ab-3d62-29e5cae1107b" class="card-title">
+                                  <div bind="28259b75-5edd-83ab-3d62-29e5cae1107c" class="tagline">Fruit</div>
+                                  <h3 bind="28259b75-5edd-83ab-3d62-29e5cae1107e" class="heading xs">Kiwifruit</h3>
+                                  <p bind="28259b75-5edd-83ab-3d62-29e5cae11080" class="body-text m s-m-b-0">Kiwifruit (often shortened to kiwi in North America and continental Europe) or Chinese gooseberry is the edible berry of several species of woodyvines in the genus Actinidia.</p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="cards-filter" bind="529dca2e-2e6b-9d7b-7390-c5f1b48125b7" class="style-guide-page-section-wrapper">
+                  <h2 bind="529dca2e-2e6b-9d7b-7390-c5f1b48125b8">Cards Filter</h2>
+                  <p bind="529dca2e-2e6b-9d7b-7390-c5f1b48125ba"><strong bind="529dca2e-2e6b-9d7b-7390-c5f1b48125bb">Requires: </strong>SystemFlow 1.3+</p>
+                  <p bind="529dca2e-2e6b-9d7b-7390-c5f1b48125be">Thanks to this component, you can filter out the cards by their tagline by default, however, you can change it to filter by different class content. You can use this filter component together with card search. This component is similar to Multiple Select but it will populate the options automatically by the class content of your choice.</p>
+                  <h3 bind="529dca2e-2e6b-9d7b-7390-c5f1b48125c0">How to use it?</h3>
+                  <ol bind="529dca2e-2e6b-9d7b-7390-c5f1b48125c2" role="list">
+                    <li bind="529dca2e-2e6b-9d7b-7390-c5f1b48125c3">Place the Component from Quick Search (Cmd + E) - search for <strong bind="529dca2e-2e6b-9d7b-7390-c5f1b48125c5">LC / Cards Filter </strong>and unlink it (right click and Unlink Instance).</li>
+                    <li bind="529dca2e-2e6b-9d7b-7390-c5f1b48125c8">Optionally, change the attribute <span bind="529dca2e-2e6b-9d7b-7390-c5f1b48125ca" class="code-span">data-sysflow-cards-filter</span> value on the wrapper element so that it reflects the class inside of .card that you&#x27;d like to search in instead of the tagline, eg. <span bind="4187b417-87fb-34f0-0657-70eb13547f56" class="code-span">.card .heading</span></li>
+                  </ol>
+                  <div bind="529dca2e-2e6b-9d7b-7390-c5f1b48125d3" class="component-wrapper">
+                    <div bind="529dca2e-2e6b-9d7b-7390-c5f1b48125d4" class="component-wrapper-label">LC / Cards Filter</div>
+                    <div bind="5bd18787-d9a1-de71-17ce-af99c92ec1e9" class="cards-section c-b-neutral-20">
+                      <div bind="5bd18787-d9a1-de71-17ce-af99c92ec1ea" class="container">
+                        <div bind="5bd18787-d9a1-de71-17ce-af99c92ec1eb" class="wrapper-m">
+                          <div bind="fd7687b9-df98-a653-5a63-65f171a77aa6" data-sysflow-cards-filter="0" class="w-form">
+                            <form id="email-form-3" name="email-form-3" data-name="Email Form 3" method="get" data-wf-page-id="63ee6d8b12a1ffba7969a17c" data-wf-element-id="fd7687b9-df98-a653-5a63-65f171a77aa7">
+                              <div data-sysflow-multiple="0" class="multiple">
+                                <div data-hover="false" data-delay="0" bind="fd7687b9-df98-a653-5a63-65f171a77aa9" class="dropdown w-dropdown">
+                                  <div data-sysflow-multiple-toggle="0" class="button medium outline multiple w-dropdown-toggle">
+                                    <div class="multiple-select-content">
+                                      <div class="tags-wrapper">
+                                        <div data-sysflow-multiple-tags="0" class="tags">
+                                          <div class="tag tag-closeable">
+                                            <div>Tag</div>
+                                            <div class="material-icons icon-right icon-close">close</div>
+                                          </div>
+                                          <div class="tag tag-closeable">
+                                            <div>Tag</div>
+                                            <div class="material-icons icon-right icon-close">close</div>
+                                          </div>
+                                        </div>
+                                        <div data-sysflow-multiple-placeholder="0">Filter cards by taglines</div>
+                                      </div>
+                                      <div class="material-icons icon-right">expand_more</div>
+                                    </div>
+                                  </div>
+                                  <nav data-sysflow-multiple-list="0" class="dropdown-menu-1 w-dropdown-list"></nav>
+                                </div>
+                                <div bind="fd7687b9-df98-a653-5a63-65f171a77aba" class="lc-embed w-embed w-script">
+                                  <script src="https://systemflowco.github.io/scripts/cardsfilter-min.js"></script>
+                                </div>
+                              </div>
+                            </form>
+                            <div class="w-form-done">
+                              <div>Thank you! Your submission has been received!</div>
+                            </div>
+                            <div class="w-form-fail">
+                              <div>Oops! Something went wrong while submitting the form.</div>
+                            </div>
+                          </div>
+                          <div bind="37e02779-61ab-b5c8-3800-aad80deb749a" class="w-layout-grid l-g-2-col">
+                            <a bind="37e02779-61ab-b5c8-3800-aad80deb749b" id="w-node-_37e02779-61ab-b5c8-3800-aad80deb749b-7969a17c" href="#" class="card card-box w-inline-block"><img src="../../../images/Image-Placeholder-2.svg" alt="Image placeholder" bind="37e02779-61ab-b5c8-3800-aad80deb749c" class="card-image card-image-box">
+                              <div bind="37e02779-61ab-b5c8-3800-aad80deb749d" class="card-text-wrapper s-p-24">
+                                <div bind="37e02779-61ab-b5c8-3800-aad80deb749e" class="card-title">
+                                  <div bind="37e02779-61ab-b5c8-3800-aad80deb749f" class="tagline">Vegetable</div>
+                                  <h3 bind="37e02779-61ab-b5c8-3800-aad80deb74a1" class="heading xs">Potato</h3>
+                                  <p bind="37e02779-61ab-b5c8-3800-aad80deb74a3" class="body-text m s-m-b-0">The potato is a starchy tuber of the plant Solanum tuberosum and is a root vegetable native to the Americas, with the plant itself being a perennial in the nightshade family Solanaceae.</p>
+                                </div>
+                              </div>
+                            </a>
+                            <a bind="37e02779-61ab-b5c8-3800-aad80deb74a5" id="w-node-_37e02779-61ab-b5c8-3800-aad80deb74a5-7969a17c" href="#" class="card card-box w-inline-block"><img src="../../../images/Image-Placeholder-2.svg" alt="Image placeholder" bind="37e02779-61ab-b5c8-3800-aad80deb74a6" class="card-image card-image-box">
+                              <div bind="37e02779-61ab-b5c8-3800-aad80deb74a7" class="card-text-wrapper s-p-24">
+                                <div bind="37e02779-61ab-b5c8-3800-aad80deb74a8" class="card-title">
+                                  <div bind="37e02779-61ab-b5c8-3800-aad80deb74a9" class="tagline">Fruit</div>
+                                  <h3 bind="37e02779-61ab-b5c8-3800-aad80deb74ab" class="heading xs">Banana</h3>
+                                  <p bind="37e02779-61ab-b5c8-3800-aad80deb74ad" class="body-text m s-m-b-0">A banana is an elongated, edible fruit – botanically a berry – produced by several kinds of large herbaceous flowering plants.</p>
+                                </div>
+                              </div>
+                            </a>
+                            <a bind="37e02779-61ab-b5c8-3800-aad80deb74af" id="w-node-_37e02779-61ab-b5c8-3800-aad80deb74af-7969a17c" href="#" class="card card-box w-inline-block"><img src="../../../images/Image-Placeholder-2.svg" alt="Image placeholder" bind="37e02779-61ab-b5c8-3800-aad80deb74b0" class="card-image card-image-box">
+                              <div bind="37e02779-61ab-b5c8-3800-aad80deb74b1" class="card-text-wrapper s-p-24">
+                                <div bind="37e02779-61ab-b5c8-3800-aad80deb74b2" class="card-title">
+                                  <div bind="37e02779-61ab-b5c8-3800-aad80deb74b3" class="tagline">Vegetable</div>
+                                  <h3 bind="37e02779-61ab-b5c8-3800-aad80deb74b5" class="heading xs">Cucumber</h3>
+                                  <p bind="37e02779-61ab-b5c8-3800-aad80deb74b7" class="body-text m s-m-b-0">Cucumber (Cucumis sativus) is a widely-cultivated creeping vine plant in the Cucurbitaceae gourd family that bears usually cylindrical fruits, which are used as vegetables.</p>
+                                </div>
+                              </div>
+                            </a>
+                            <a bind="37e02779-61ab-b5c8-3800-aad80deb74b9" id="w-node-_37e02779-61ab-b5c8-3800-aad80deb74b9-7969a17c" href="#" class="card card-box w-inline-block"><img src="../../../images/Image-Placeholder-2.svg" alt="Image placeholder" bind="37e02779-61ab-b5c8-3800-aad80deb74ba" class="card-image card-image-box">
+                              <div bind="37e02779-61ab-b5c8-3800-aad80deb74bb" class="card-text-wrapper s-p-24">
+                                <div bind="37e02779-61ab-b5c8-3800-aad80deb74bc" class="card-title">
+                                  <div bind="37e02779-61ab-b5c8-3800-aad80deb74bd" class="tagline">Vegetable</div>
+                                  <h3 bind="37e02779-61ab-b5c8-3800-aad80deb74bf" class="heading xs">Carrot</h3>
+                                  <p bind="37e02779-61ab-b5c8-3800-aad80deb74c1" class="body-text m s-m-b-0">The carrot is a root vegetable, typically orange in color, though purple, black, red, white, and yellow cultivars exist, all of which are domesticated forms of the wild carrot, Daucus carota, native to Europe and Southwestern Asia.</p>
+                                </div>
+                              </div>
+                            </a>
+                            <a bind="37e02779-61ab-b5c8-3800-aad80deb74c3" id="w-node-_37e02779-61ab-b5c8-3800-aad80deb74c3-7969a17c" href="#" class="card card-box w-inline-block"><img src="../../../images/Image-Placeholder-2.svg" alt="Image placeholder" bind="37e02779-61ab-b5c8-3800-aad80deb74c4" class="card-image card-image-box">
+                              <div bind="37e02779-61ab-b5c8-3800-aad80deb74c5" class="card-text-wrapper s-p-24">
+                                <div bind="37e02779-61ab-b5c8-3800-aad80deb74c6" class="card-title">
+                                  <div bind="37e02779-61ab-b5c8-3800-aad80deb74c7" class="tagline">Fruit</div>
+                                  <h3 bind="37e02779-61ab-b5c8-3800-aad80deb74c9" class="heading xs">Pineapple</h3>
+                                  <p bind="37e02779-61ab-b5c8-3800-aad80deb74cb" class="body-text m s-m-b-0">The pineapple (Ananas comosus) is a tropical plant with an edible fruit; it is the most economically significant plant in the family Bromeliaceae. The pineapple is indigenous to South America, where it has been cultivated for many centuries.</p>
+                                </div>
+                              </div>
+                            </a>
+                            <a bind="37e02779-61ab-b5c8-3800-aad80deb74cd" id="w-node-_37e02779-61ab-b5c8-3800-aad80deb74cd-7969a17c" href="#" class="card card-box w-inline-block"><img src="../../../images/Image-Placeholder-2.svg" alt="Image placeholder" bind="37e02779-61ab-b5c8-3800-aad80deb74ce" class="card-image card-image-box">
+                              <div bind="37e02779-61ab-b5c8-3800-aad80deb74cf" class="card-text-wrapper s-p-24">
+                                <div bind="37e02779-61ab-b5c8-3800-aad80deb74d0" class="card-title">
+                                  <div bind="37e02779-61ab-b5c8-3800-aad80deb74d1" class="tagline">Fruit</div>
+                                  <h3 bind="37e02779-61ab-b5c8-3800-aad80deb74d3" class="heading xs">Kiwifruit</h3>
+                                  <p bind="37e02779-61ab-b5c8-3800-aad80deb74d5" class="body-text m s-m-b-0">Kiwifruit (often shortened to kiwi in North America and continental Europe) or Chinese gooseberry is the edible berry of several species of woodyvines in the genus Actinidia.</p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div bind="2ddcadf6-bdbb-8337-dfc9-c0bc3e9ecbd2" id="w-node-_2ddcadf6-bdbb-8337-dfc9-c0bc3e9ecbd2-7969a17c" class="side-nav-menu">
+                <div bind="e8146e15-faa3-70c9-87e9-b521139cc443" class="popup-title">Live Components</div>
+                <ul bind="e8146e15-faa3-70c9-87e9-b521139cc445" role="list" class="w-list-unstyled">
+                  <li bind="e8146e15-faa3-70c9-87e9-b521139cc446">
+                    <a href="#countdown" bind="e8146e15-faa3-70c9-87e9-b521139cc447" class="side-nav-menu-item small">Countdown</a>
+                  </li>
+                  <li bind="e8146e15-faa3-70c9-87e9-b521139cc449">
+                    <a href="#show-hide-on-date" bind="e8146e15-faa3-70c9-87e9-b521139cc44a" class="side-nav-menu-item small">Show &amp; Hide on date</a>
+                  </li>
+                  <li bind="e8146e15-faa3-70c9-87e9-b521139cc44c">
+                    <a href="#cookie-notification" bind="e8146e15-faa3-70c9-87e9-b521139cc44d" class="side-nav-menu-item small">Cookie Notification</a>
+                  </li>
+                  <li bind="e8146e15-faa3-70c9-87e9-b521139cc44f">
+                    <a href="#confetti-popper" bind="e8146e15-faa3-70c9-87e9-b521139cc450" class="side-nav-menu-item small">Confetti Popper</a>
+                    <a href="#text-replace" bind="33fb0be0-9262-ef1c-dcc6-116d332c48c8" class="side-nav-menu-item small">Text Replace</a>
+                    <a href="#form-memory" bind="b544b5d4-6fb8-d67f-9a33-0532b72e6a98" class="side-nav-menu-item small">Form Memory</a>
+                    <a href="#form-hidden-field" bind="85387898-d3ac-e0e0-b0a5-041ca9d335a6" class="side-nav-menu-item small">Form Hidden Field</a>
+                    <a href="#form-prefill" bind="4293ddbc-58b5-4d13-71c3-7cfda7002a80" class="side-nav-menu-item small">Form Prefill</a>
+                    <a href="#countup" bind="bf5bdd06-e51f-9ae7-41de-ad6d113cb955" class="side-nav-menu-item small">Countup</a>
+                    <a href="#age-verification" bind="36b664a6-1ec2-ec9a-b932-a03c646e9bbf" class="side-nav-menu-item small">Age Verification</a>
+                    <a href="#multiple-select" bind="505d34f7-01f8-53b5-cce9-0c151fc9db32" class="side-nav-menu-item small">Multiple Select</a>
+                    <a href="#cards-search" bind="881f8a94-aaaa-36cd-8a0d-9a06924004d4" class="side-nav-menu-item small">Cards Search</a>
+                    <a href="#cards-filter" bind="256c79e2-5129-1cd2-b801-75122f2b8745" class="side-nav-menu-item small">Cards Filter</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div bind="db8ae0d2-425e-f130-cc40-f8402b6c8e2a" class="footer-docs">
+        <div class="container">
+          <div class="wrapper-m">
+            <div class="footer-top-2">
+              <div class="footer-menu-wrapper">
+                <div class="footer-docs-navigation">
+                  <a href="https://www.systemflow.co/" target="_blank" class="nav-link w-inline-block">
+                    <div>Homepage</div>
+                  </a>
+                  <a href="https://www.systemflow.co/university" target="_blank" class="nav-link w-inline-block">
+                    <div>University</div>
+                  </a>
+                  <a href="https://www.systemflow.co/changelog" target="_blank" class="nav-link w-inline-block">
+                    <div>Changelog</div>
+                  </a>
+                  <a href="mailto:hello@systemflow.co?subject=Docs%20Footer%20Contact" class="nav-link w-inline-block">
+                    <div>Contact</div>
+                  </a>
+                  <a href="https://airtable.com/shr3y7fsxcuTCVHI8" target="_blank" class="nav-link w-inline-block">
+                    <div>Report a bug</div>
+                  </a>
+                </div>
+              </div>
+              <div class="sm-icons-wrapper">
+                <a aria-label="Twitter" href="https://twitter.com/systemflow_co" target="_blank" class="sm-icon-link w-inline-block">
+                  <div bind="f391df9b-26ea-6326-d779-23b933549d3c" class="social-media-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveaspectratio="xMidYMid meet" viewbox="0 0 1024 1024">
+                      <path d="M928 254.3c-30.6 13.2-63.9 22.7-98.2 26.4a170.1 170.1 0 0 0 75-94a336.64 336.64 0 0 1-108.2 41.2A170.1 170.1 0 0 0 672 174c-94.5 0-170.5 76.6-170.5 170.6c0 13.2 1.6 26.4 4.2 39.1c-141.5-7.4-267.7-75-351.6-178.5a169.32 169.32 0 0 0-23.2 86.1c0 59.2 30.1 111.4 76 142.1a172 172 0 0 1-77.1-21.7v2.1c0 82.9 58.6 151.6 136.7 167.4a180.6 180.6 0 0 1-44.9 5.8c-11.1 0-21.6-1.1-32.2-2.6C211 652 273.9 701.1 348.8 702.7c-58.6 45.9-132 72.9-211.7 72.9c-14.3 0-27.5-.5-41.2-2.1C171.5 822 261.2 850 357.8 850C671.4 850 843 590.2 843 364.7c0-7.4 0-14.8-.5-22.2c33.2-24.3 62.3-54.4 85.5-88.2z" fill="#AAAFB6"></path>
+                    </svg></div>
+                </a>
+                <a aria-label="YouTube" href="https://www.youtube.com/channel/UC2AW12laqAKQyYcpYlGzREA" target="_blank" class="sm-icon-link w-inline-block">
+                  <div bind="f391df9b-26ea-6326-d779-23b933549d3e" class="social-media-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveaspectratio="xMidYMid meet" viewbox="0 0 1024 1024">
+                      <path d="M941.3 296.1a112.3 112.3 0 0 0-79.2-79.3C792.2 198 512 198 512 198s-280.2 0-350.1 18.7A112.12 112.12 0 0 0 82.7 296C64 366 64 512 64 512s0 146 18.7 215.9c10.3 38.6 40.7 69 79.2 79.3C231.8 826 512 826 512 826s280.2 0 350.1-18.8c38.6-10.3 68.9-40.7 79.2-79.3C960 658 960 512 960 512s0-146-18.7-215.9zM423 646V378l232 133l-232 135z" fill="#AAAFB6"></path>
+                    </svg></div>
+                </a>
+                <a aria-label="LinkedIn" href="https://www.linkedin.com/company/systemflow-co" target="_blank" class="sm-icon-link s-m-r-0 w-inline-block">
+                  <div bind="f391df9b-26ea-6326-d779-23b933549d40" class="social-media-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveaspectratio="xMidYMid meet" viewbox="0 0 1024 1024">
+                      <path d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zM349.3 793.7H230.6V411.9h118.7v381.8zm-59.3-434a68.8 68.8 0 1 1 68.8-68.8c-.1 38-30.9 68.8-68.8 68.8zm503.7 434H675.1V608c0-44.3-.8-101.2-61.7-101.2c-61.7 0-71.2 48.2-71.2 98v188.9H423.7V411.9h113.8v52.2h1.6c15.8-30 54.5-61.7 112.3-61.7c120.2 0 142.3 79.1 142.3 181.9v209.4z" fill="#AAAFB6"></path>
+                    </svg></div>
+                </a>
+              </div>
+            </div>
+            <div class="footer-bottom-docs">
+              <div class="st-m-b-24">© <span id="year">x</span> SystemFlow. All rights reserved.<br>Designed in 🇵🇱 by <a href="https://twitter.com/matsugfx" target="_blank" class="c-t-neutral-80">Matt Wierzbicki</a> &amp; <a href="https://twitter.com/greg_rog" target="_blank" class="c-t-neutral-80">Greg Rog</a>
+              </div>
+              <div>
+                <a href="https://www.systemflow.co/licensing-terms" target="_blank" class="vertical-menu-link">Licensing &amp; Terms</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div bind="88f2d553-09ee-fa4d-e34a-697dc9ad0736" class="footer-docs-embed w-embed w-script"><!--  Copying by clicking on Comp name  -->
+          <script>
+function copy(e){const t=document.createElement("textarea");t.style="position: absolute; left: -100vw;",t.value=e,document.body.appendChild(t),t.select(),document.execCommand("copy"),document.body.removeChild(t)}function copyText(e){const t=e.currentTarget,o=t.textContent;copy(o),t.textContent="Copied to clipboard. Press Cmd + E in Webflow and Paste",setTimeout(()=>{t.textContent=o},3e3)}const elems=document.querySelectorAll(".component-wrapper-label");elems.forEach(e=>e.addEventListener("click",copyText,!1));
+</script>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div bind="e6450697-3f78-9fc5-d9bd-a816d663e985" class="backtotop-wrapper docsui">
+    <a href="#top" class="button medium icon-only outline w-inline-block">
+      <div class="text-icon-wrapper">
+        <div class="material-icons">arrow_upward</div>
+      </div>
+    </a>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=63ee6d8b12a1ffaabe69a12c" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="../../../js/webflow.js" type="text/javascript"></script><!--  Dynamic Copyright Year  -->
+  <script>
+window.onload=function(){var e=(new Date).getFullYear(),n=document.getElementById("year");n&&(n.innerHTML=e)};
+</script>
+</body>
+</html>
